@@ -9,7 +9,7 @@
 - name: Role foolean/xinetd
   block:
 
-    - name: Ensure xinetd is not installed (CIS)
+    - name: CIS | Ensure xinetd is not installed
       become: true
       ansible.builtin.package:
         name: 'xinetd'
